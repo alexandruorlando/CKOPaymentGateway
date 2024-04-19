@@ -1,0 +1,14 @@
+﻿version: '3.8'
+services:
+  paymentgateway.api:
+    image: paymentgateway.api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    volumes:
+      - ${HOME}/.aspnet/https:/https:ro
