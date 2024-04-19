@@ -4,7 +4,7 @@ using PaymentGateway.Infrastructure.Abstractions.BankSimulator.Dtos;
 
 namespace PaymentGateway.Infrastructure.BankSimulator;
 
-// Mocked service
+// Mocked service - CKO Bank Simulator
 public class BankSimulatorService(ILogger<BankSimulatorService> logger) : IBankSimulatorService
 {
     public async Task<ProcessBankPaymentResponse> ProcessPaymentAsync(ProcessBankPaymentRequest processBankPaymentRequest, CancellationToken cancellationToken)
