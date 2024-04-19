@@ -21,7 +21,7 @@ The Payment Gateway API is a robust, secure, and easy-to-integrate solution for 
 
 1. **Clone the repository**:
     ```bash
-    git clone [[REPO_URL]](https://github.com/alexandruorlando/CKOPaymentGateway.git)
+    git clone https://github.com/alexandruorlando/CKOPaymentGateway.git
     ```
 
 2. **Build and deploy with Docker Compose**:
