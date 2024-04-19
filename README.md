@@ -111,10 +111,6 @@ The API validates all incoming data using annotations and custom validation logi
 
 Utilise the health checks to monitor service health and logging to track operational data.
 
-## Conclusion
-
-The Payment Gateway API is tailored for easy integration and scaling, ensuring a secure and reliable payment processing platform.
-
 ## Author
 
 - Alex Orlando
