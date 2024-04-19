@@ -51,5 +51,4 @@ project.fragment.lock.json
 *.exe
 *.pdb
 *.xml
-*.json
 *.csproj.user
