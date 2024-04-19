@@ -12,6 +12,7 @@ using PaymentGateway.Infrastructure.Currency;
 using PaymentGateway.Infrastructure.Data.Repositories;
 using PaymentGateway.Infrastructure.Database;
 using PaymentGateway.Infrastructure.Database.Configuration;
+using PaymentGateway.Infrastructure.Sequencers;
 using PaymentGateway.Infrastructure.Time;
 using PaymentGateway.Infrastructure.TokenServiceProvider;
 

@@ -1,6 +1,8 @@
 ﻿using PaymentGateway.Infrastructure.Abstractions.Sequencers;
 using PaymentGateway.Infrastructure.Abstractions.Time;
 
+namespace PaymentGateway.Infrastructure.Sequencers;
+
 public class TimestampIdGenerator(IClock clock) : IIdGenerator
 {
     private long _lastTimestamp = -1;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PaymentGateway.Caching.Cache;
 using PaymentGateway.Caching.Idempotency;
+using PaymentGateway.Caching.Locking;
 using PaymentGateway.Infrastructure.Abstractions.Cache;
 using PaymentGateway.Infrastructure.Abstractions.Idempotency;
 using PaymentGateway.Infrastructure.Abstractions.Locking;

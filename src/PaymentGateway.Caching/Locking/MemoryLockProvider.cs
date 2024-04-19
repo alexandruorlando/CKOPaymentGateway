@@ -1,5 +1,7 @@
 ﻿using PaymentGateway.Infrastructure.Abstractions.Locking;
 
+namespace PaymentGateway.Caching.Locking;
+
 public class InMemoryLockProvider : ILockProvider
 {
     private static readonly Dictionary<string, bool> Locks = new();
