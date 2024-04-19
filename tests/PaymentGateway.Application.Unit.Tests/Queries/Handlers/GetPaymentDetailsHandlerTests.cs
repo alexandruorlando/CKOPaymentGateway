@@ -29,7 +29,8 @@ public class GetPaymentDetailsHandlerTests
         // Arrange
         var request = new GetPaymentDetailsQuery("not-a-valid-guid");
 
-        // Act & Assert
+        // Act
+        // Assert
         var ex = Assert.ThrowsAsync<ValidationException>(() => _handler.Handle(request, CancellationToken.None));
         Assert.That(ex.Message, Is.EqualTo("Payment identifier is invalid."));
     }
@@ -68,7 +69,8 @@ public class GetPaymentDetailsHandlerTests
         _paymentServiceMock.Setup(x => x.GetPaymentDetailsAsync(It.IsAny<Guid>(), It.IsAny<CancellationToken>()))
             .ThrowsAsync(new KeyNotFoundException());
 
-        // Act & Assert
+        // Act
+        // Assert
         Assert.ThrowsAsync<KeyNotFoundException>(() => _handler.Handle(request, CancellationToken.None));
     }
 
@@ -83,7 +85,8 @@ public class GetPaymentDetailsHandlerTests
         _paymentServiceMock.Setup(x => x.GetPaymentDetailsAsync(It.IsAny<Guid>(), It.IsAny<CancellationToken>()))
             .ThrowsAsync(new Exception(exceptionMessage));
 
-        // Act & Assert
+        // Act
+        // Assert
         var ex = Assert.ThrowsAsync<ApplicationException>(() => _handler.Handle(request, CancellationToken.None));
         Assert.That(ex.InnerException?.Message, Is.EqualTo(exceptionMessage));
     }

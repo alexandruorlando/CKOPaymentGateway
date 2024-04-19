@@ -1,4 +1,4 @@
-﻿namespace PaymentGateway.Infrastructure.Configurations;
+﻿namespace PaymentGateway.Infrastructure.Database.Configuration;
 
 public class DatabaseConfiguration
 {

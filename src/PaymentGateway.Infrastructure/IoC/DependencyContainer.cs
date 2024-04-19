@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using PaymentGateway.Infrastructure.BankSimulator;
-using PaymentGateway.Infrastructure.Configurations;
 using PaymentGateway.Infrastructure.Abstractions.BankSimulator;
 using PaymentGateway.Infrastructure.Abstractions.Currency;
 using PaymentGateway.Infrastructure.Abstractions.Data.Repositories;
@@ -12,6 +11,7 @@ using PaymentGateway.Infrastructure.Abstractions.TokenServiceProvider;
 using PaymentGateway.Infrastructure.Currency;
 using PaymentGateway.Infrastructure.Data.Repositories;
 using PaymentGateway.Infrastructure.Database;
+using PaymentGateway.Infrastructure.Database.Configuration;
 using PaymentGateway.Infrastructure.Time;
 using PaymentGateway.Infrastructure.TokenServiceProvider;
 

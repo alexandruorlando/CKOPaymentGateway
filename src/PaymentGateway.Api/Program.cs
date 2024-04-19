@@ -3,7 +3,7 @@ using PaymentGateway.Api.Middlewares;
 using PaymentGateway.Application.IoC;
 using PaymentGateway.Caching.IoC;
 using PaymentGateway.Domain.Services.IoC;
-using PaymentGateway.Infrastructure.Configurations;
+using PaymentGateway.Infrastructure.Database.Configuration;
 using PaymentGateway.Infrastructure.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
