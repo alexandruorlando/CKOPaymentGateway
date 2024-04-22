@@ -89,7 +89,8 @@ dotnet test
 The solution has:
 - Unit tests using NUnit and Moq.
 - Integration tests using an in-memory SQL Server database.
-- Used AutoFixture for synthetically generating random, unbiased test cases.
+- Third-party components were mocked for these scenarios: success, error, and unhandled exception.
+- AutoFixture was used to synthetically generate random, unbiased test cases.
 
 ## Assumptions:
 - Rate limiter set to 60 requests per IP per second.
@@ -97,6 +98,9 @@ The solution has:
 - Allowed currencies are described in the "Allowed Currencies" section.
 - Payments should be idempotent.
 - The system should handle payments in parallel.
+- Card information is securely stored by the Card Tokenization Service. Payment Gateway only stores the token.
+- Actual payment processing is handled by the Bank Simulator Service.
+- All externally exposed API contracts are defined in PaymentGateway.Contracts (v1).
 
 ## Areas of improvement:
 - Enhance security: Enable HTTPS and other mechanisms to ensure PCI DSS compliance.
