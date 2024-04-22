@@ -87,9 +87,9 @@ Run the provided tests to validate functionality:
 dotnet test
 ```
 The solution has:
-- Unit tests - using NUnit, Moq;
-- Integration tests using an In-memory SQL Server database
-- Uses Autofixture for synthethically generating random, unbiased tests cases
+- Unit tests using NUnit and Moq.
+- Integration tests using an in-memory SQL Server database.
+- Used AutoFixture for synthetically generating random, unbiased test cases.
 
 ## Assumptions:
 - Rate limiter set to 60 requests per IP per second.
